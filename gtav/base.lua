@@ -19,11 +19,13 @@ CreateThread(function()
     RequestIpl("CS1_02_cf_onmission4")
 
     -- Grapeseed's farm: 2447.9, 4973.4, 47.7
-    RequestIpl("farm")
-    RequestIpl("farmint")
-    RequestIpl("farm_lod")
-    RequestIpl("farm_props")
-    RequestIpl("des_farmhouse")
+    -- RequestIpl("farm")
+    -- RequestIpl("farmint")
+    -- RequestIpl("farm_lod")
+    -- RequestIpl("farm_props")
+    -- RequestIpl("des_farmhouse")
+    RequestIpl("farm_burnt")
+    RequestIpl("farm_burnt_props")
 
     -- FIB lobby: 105.4557, -745.4835, 44.7548
     RequestIpl("FIBlobby")

@@ -1,4 +1,4 @@
-Citizen.CreateThread(function()
+CreateThread(function()
     -- ====================================================================
     -- =--------------------- [GTA V: Single player] ---------------------=
     -- ====================================================================
@@ -100,20 +100,20 @@ Citizen.CreateThread(function()
     -- =-------------------------- [DLC: Bikers] -------------------------=
     -- ====================================================================
     BikerCocaine.LoadDefault() -- Cocaine lockup: 1093.6, -3196.6, -38.99841
-    BikerCounterfeit.LoadDefault() -- Counterfeit cash factory: 1121.897, -3195.338, -40.4025
-    BikerDocumentForgery.LoadDefault() -- Document forgery: 1165, -3196.6, -39.01306
-    BikerMethLab.LoadDefault() -- Meth lab: 1009.5, -3196.6, -38.99682
+    -- BikerCounterfeit.LoadDefault()     -- Counterfeit cash factory: 1121.897, -3195.338, -40.4025
+    -- BikerDocumentForgery.LoadDefault() -- Document forgery: 1165, -3196.6, -39.01306
+    -- BikerMethLab.LoadDefault()         -- Meth lab: 1009.5, -3196.6, -38.99682
     BikerWeedFarm.LoadDefault() -- Weed farm: 1051.491, -3196.536, -39.14842
-    BikerClubhouse1.LoadDefault() -- 1107.04, -3157.399, -37.51859
-    BikerClubhouse2.LoadDefault() -- 998.4809, -3164.711, -38.90733
+    -- BikerClubhouse1.LoadDefault()      -- 1107.04, -3157.399, -37.51859
+    -- BikerClubhouse2.LoadDefault()      -- 998.4809, -3164.711, -38.90733
 
     -- ====================================================================
     -- =---------------------- [DLC: Import/Export] ----------------------=
     -- ====================================================================
-    ImportCEOGarage1.LoadDefault() -- Arcadius Business Centre
-    ImportCEOGarage2.LoadDefault() -- Maze Bank Building /!\ Do not load parts Garage1, Garage2 and Garage3 at the same time (overlaping issues)
-    ImportCEOGarage3.LoadDefault() -- Lom Bank /!\ Do not load parts Garage1, Garage2 and Garage3 at the same time (overlaping issues)
-    ImportCEOGarage4.LoadDefault() -- Maze Bank West /!\ Do not load parts Garage1, Garage2 and Garage3 at the same time (overlaping issues)
+    ImportCEOGarage1.LoadDefault()       -- Arcadius Business Centre
+    ImportCEOGarage2.LoadDefault()       -- Maze Bank Building /!\ Do not load parts Garage1, Garage2 and Garage3 at the same time (overlaping issues)
+    ImportCEOGarage3.LoadDefault()       -- Lom Bank /!\ Do not load parts Garage1, Garage2 and Garage3 at the same time (overlaping issues)
+    ImportCEOGarage4.LoadDefault()       -- Maze Bank West /!\ Do not load parts Garage1, Garage2 and Garage3 at the same time (overlaping issues)
     ImportVehicleWarehouse.LoadDefault() -- Vehicle warehouse: 994.5925, -3002.594, -39.64699
 
     -- ====================================================================
@@ -125,7 +125,7 @@ Citizen.CreateThread(function()
     -- ====================================================================
     -- =---------------------- [DLC: Smuggler's Run] ---------------------=
     -- ====================================================================
-    SmugglerHangar.LoadDefault() -- -1267.0 -3013.135 -49.5
+    -- SmugglerHangar.LoadDefault() -- -1267.0 -3013.135 -49.5
 
     -- ====================================================================
     -- =-------------------- [DLC: The Doomsday Heist] -------------------=
@@ -135,13 +135,13 @@ Citizen.CreateThread(function()
     -- ====================================================================
     -- =----------------------- [DLC: After Hours] -----------------------=
     -- ====================================================================
-    AfterHoursNightclubs.LoadDefault() -- -1604.664, -3012.583, -78.000
+    -- AfterHoursNightclubs.LoadDefault() -- -1604.664, -3012.583, -78.000
 
     -- ====================================================================
     -- =------------------- [DLC: Diamond Casino Resort] -----------------=
     -- ====================================================================
     if GetGameBuildNumber() >= 2060 then
-        DiamondCasino.LoadDefault() -- 1100.000, 220.000, -50.000
+        DiamondCasino.LoadDefault()    -- 1100.000, 220.000, -50.000
         DiamondPenthouse.LoadDefault() -- 976.636, 70.295, 115.164
     end
 
@@ -149,32 +149,32 @@ Citizen.CreateThread(function()
     -- =------------------- [DLC: Los Santos Tuners] ---------------------=
     -- ====================================================================
     if GetGameBuildNumber() >= 2372 then
-        TunerGarage.LoadDefault() -- -1350.0, 160.0, -100.0
-        TunerMethLab.LoadDefault() -- 981.9999, -143.0, -50.0
-        TunerMeetup.LoadDefault() -- -2000.0, 1113.211, -25.36243
+        -- TunerGarage.LoadDefault()  -- -1350.0, 160.0, -100.0
+        -- TunerMethLab.LoadDefault() -- 981.9999, -143.0, -50.0
+        -- TunerMeetup.LoadDefault()  -- -2000.0, 1113.211, -25.36243
     end
 
     -- ====================================================================
     -- =------------------- [DLC: Los Santos The Contract] ---------------------=
     -- ====================================================================
     if GetGameBuildNumber() >= 2545 then
-        MpSecurityGarage.LoadDefault() -- -1071.4387, -77.033875, -93.525505
+        MpSecurityGarage.LoadDefault()       -- -1071.4387, -77.033875, -93.525505
         MpSecurityMusicRoofTop.LoadDefault() -- -592.6896, 273.1052, 116.302444
-        MpSecurityStudio.LoadDefault() -- -1000.7252, -70.559875, -98.10669
-        MpSecurityBillboards.LoadDefault() -- -592.6896, 273.1052, 116.302444
-        MpSecurityOffice1.LoadDefault() -- -1021.86084, -427.74564, 68.95764
-        MpSecurityOffice2.LoadDefault() -- 383.4156, -59.878227, 108.4595
-        MpSecurityOffice3.LoadDefault() -- -1004.23035, -761.2084, 66.99069
-        MpSecurityOffice4.LoadDefault() -- -587.87213, -716.84937, 118.10156
+        MpSecurityStudio.LoadDefault()       -- -1000.7252, -70.559875, -98.10669
+        MpSecurityBillboards.LoadDefault()   -- -592.6896, 273.1052, 116.302444
+        MpSecurityOffice1.LoadDefault()      -- -1021.86084, -427.74564, 68.95764
+        MpSecurityOffice2.LoadDefault()      -- 383.4156, -59.878227, 108.4595
+        MpSecurityOffice3.LoadDefault()      -- -1004.23035, -761.2084, 66.99069
+        MpSecurityOffice4.LoadDefault()      -- -587.87213, -716.84937, 118.10156
     end
 
     -- ====================================================================
     -- =------------------- [DLC: The Criminal Enterprise] ---------------------=
     -- ====================================================================
     if GetGameBuildNumber() >= 2699 then
-        CriminalEnterpriseSmeonFix.LoadDefault() -- -50.2248, -1098.8325, 26.049742
+        CriminalEnterpriseSmeonFix.LoadDefault()         -- -50.2248, -1098.8325, 26.049742
         CriminalEnterpriseVehicleWarehouse.LoadDefault() -- 800.13696, -3001.4297, -65.14074
-        CriminalEnterpriseWarehouse.LoadDefault() -- 849.1047, -3000.209, -45.974354
+        CriminalEnterpriseWarehouse.LoadDefault()        -- 849.1047, -3000.209, -45.974354
     end
 
     -- ====================================================================
@@ -204,4 +204,5 @@ Citizen.CreateThread(function()
         ChopShopLifeguard.LoadDefault() -- -1488.153, -1021.166, 5.000
         ChopShopSalvage.LoadDefault() -- 1077.276, -2274.876, -50.000
     end
+    KiiyaMotorMotel.LoadDefault()
 end)
