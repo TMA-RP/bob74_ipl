@@ -106,7 +106,7 @@ DrugWarsGarage = {
 
         -- Interior
         DrugWarsGarage.Numbering.Set(DrugWarsGarage.Numbering.level1, false)
-        DrugWarsGarage.Style.Set(DrugWarsGarage.Style.immaculate, false)
+        DrugWarsGarage.Style.Set(DrugWarsGarage.Style.indulgent, false)
         DrugWarsGarage.Tint.SetColor(DrugWarsGarage.Tint.white, false)
 
         RefreshInterior(DrugWarsGarage.interiorId)
