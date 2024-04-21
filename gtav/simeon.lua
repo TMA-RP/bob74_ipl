@@ -64,10 +64,10 @@ Simeon = {
     },
 
     LoadDefault = function()
-        Simeon.Ipl.Interior.Load()
-        Simeon.Style.Set(Simeon.Style.normal)
-        Simeon.Shutter.Set(Simeon.Shutter.opened)
+        -- Simeon.Ipl.Interior.Load()
+        -- Simeon.Style.Set(Simeon.Style.normal)
+        -- Simeon.Shutter.Set(Simeon.Shutter.opened)
 
-        RefreshInterior(Simeon.interiorId)
+        -- RefreshInterior(Simeon.interiorId)
     end
 }

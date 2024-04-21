@@ -39,7 +39,7 @@ CreateThread(function()
     Graffitis.Enable(true)
 
     -- UFO
-    UFO.Hippie.Enable(false) -- 2490.47729, 3774.84351, 2414.035
+    UFO.Hippie.Enable(false)  -- 2490.47729, 3774.84351, 2414.035
     UFO.Chiliad.Enable(false) -- 501.52880000, 5593.86500000, 796.23250000
     UFO.Zancudo.Enable(false) -- -2051.99463, 3237.05835, 1456.97021
 
@@ -54,16 +54,16 @@ CreateThread(function()
     -- ====================================================================
     GTAOApartmentHi1.LoadDefault() -- -35.31277 -580.4199 88.71221 (4 Integrity Way, Apt 30)
     GTAOApartmentHi2.LoadDefault() -- -1477.14 -538.7499 55.5264 (Dell Perro Heights, Apt 7)
-    GTAOHouseHi1.LoadDefault() -- -169.286 486.4938 137.4436 (3655 Wild Oats Drive)
-    GTAOHouseHi2.LoadDefault() -- 340.9412 437.1798 149.3925 (2044 North Conker Avenue)
-    GTAOHouseHi3.LoadDefault() -- 373.023 416.105 145.7006 (2045 North Conker Avenue)
-    GTAOHouseHi4.LoadDefault() -- -676.127 588.612 145.1698 (2862 Hillcrest Avenue)
-    GTAOHouseHi5.LoadDefault() -- -763.107 615.906 144.1401 (2868 Hillcrest Avenue)
-    GTAOHouseHi6.LoadDefault() -- -857.798 682.563 152.6529 (2874 Hillcrest Avenue)
-    GTAOHouseHi7.LoadDefault() -- 120.5 549.952 184.097 (2677 Whispymound Drive)
-    GTAOHouseHi8.LoadDefault() -- -1288 440.748 97.69459 (2133 Mad Wayne Thunder)
-    GTAOHouseMid1.LoadDefault() -- 347.2686 -999.2955 -99.19622
-    GTAOHouseLow1.LoadDefault() -- 261.4586 -998.8196 -99.00863
+    GTAOHouseHi1.LoadDefault()     -- -169.286 486.4938 137.4436 (3655 Wild Oats Drive)
+    GTAOHouseHi2.LoadDefault()     -- 340.9412 437.1798 149.3925 (2044 North Conker Avenue)
+    GTAOHouseHi3.LoadDefault()     -- 373.023 416.105 145.7006 (2045 North Conker Avenue)
+    GTAOHouseHi4.LoadDefault()     -- -676.127 588.612 145.1698 (2862 Hillcrest Avenue)
+    GTAOHouseHi5.LoadDefault()     -- -763.107 615.906 144.1401 (2868 Hillcrest Avenue)
+    GTAOHouseHi6.LoadDefault()     -- -857.798 682.563 152.6529 (2874 Hillcrest Avenue)
+    GTAOHouseHi7.LoadDefault()     -- 120.5 549.952 184.097 (2677 Whispymound Drive)
+    GTAOHouseHi8.LoadDefault()     -- -1288 440.748 97.69459 (2133 Mad Wayne Thunder)
+    GTAOHouseMid1.LoadDefault()    -- 347.2686 -999.2955 -99.19622
+    GTAOHouseLow1.LoadDefault()    -- 261.4586 -998.8196 -99.00863
 
     -- ====================================================================
     -- =------------------------ [DLC: High life] ------------------------=
@@ -79,7 +79,7 @@ CreateThread(function()
     -- =-------------------------- [DLC: Heists] -------------------------=
     -- ====================================================================
     HeistCarrier.Enable(true) -- 3082.3117, -4717.1191, 15.2622
-    HeistYacht.LoadDefault() -- -2043.974,-1031.582, 11.981
+    HeistYacht.LoadDefault()  -- -2043.974,-1031.582, 11.981
 
     -- ====================================================================
     -- =--------------- [DLC: Executives & Other Criminals] --------------=
@@ -99,13 +99,13 @@ CreateThread(function()
     -- ====================================================================
     -- =-------------------------- [DLC: Bikers] -------------------------=
     -- ====================================================================
-    BikerCocaine.LoadDefault() -- Cocaine lockup: 1093.6, -3196.6, -38.99841
-    -- BikerCounterfeit.LoadDefault()     -- Counterfeit cash factory: 1121.897, -3195.338, -40.4025
-    -- BikerDocumentForgery.LoadDefault() -- Document forgery: 1165, -3196.6, -39.01306
-    -- BikerMethLab.LoadDefault()         -- Meth lab: 1009.5, -3196.6, -38.99682
-    BikerWeedFarm.LoadDefault() -- Weed farm: 1051.491, -3196.536, -39.14842
-    -- BikerClubhouse1.LoadDefault()      -- 1107.04, -3157.399, -37.51859
-    -- BikerClubhouse2.LoadDefault()      -- 998.4809, -3164.711, -38.90733
+    BikerCocaine.LoadDefault()         -- Cocaine lockup: 1093.6, -3196.6, -38.99841
+    BikerCounterfeit.LoadDefault()     -- Counterfeit cash factory: 1121.897, -3195.338, -40.4025
+    BikerDocumentForgery.LoadDefault() -- Document forgery: 1165, -3196.6, -39.01306
+    BikerMethLab.LoadDefault()         -- Meth lab: 1009.5, -3196.6, -38.99682
+    BikerWeedFarm.LoadDefault()        -- Weed farm: 1051.491, -3196.536, -39.14842
+    BikerClubhouse1.LoadDefault()      -- 1107.04, -3157.399, -37.51859
+    BikerClubhouse2.LoadDefault()      -- 998.4809, -3164.711, -38.90733
 
     -- ====================================================================
     -- =---------------------- [DLC: Import/Export] ----------------------=
@@ -120,12 +120,12 @@ CreateThread(function()
     -- =------------------------ [DLC: Gunrunning] -----------------------=
     -- ====================================================================
     GunrunningBunker.LoadDefault() -- 892.6384, -3245.8664, -98.2645
-    GunrunningYacht.LoadDefault() -- -1363.724, 6734.108, 2.44598
+    GunrunningYacht.LoadDefault()  -- -1363.724, 6734.108, 2.44598
 
     -- ====================================================================
     -- =---------------------- [DLC: Smuggler's Run] ---------------------=
     -- ====================================================================
-    -- SmugglerHangar.LoadDefault() -- -1267.0 -3013.135 -49.5
+    SmugglerHangar.LoadDefault() -- -1267.0 -3013.135 -49.5
 
     -- ====================================================================
     -- =-------------------- [DLC: The Doomsday Heist] -------------------=
@@ -135,7 +135,7 @@ CreateThread(function()
     -- ====================================================================
     -- =----------------------- [DLC: After Hours] -----------------------=
     -- ====================================================================
-    -- AfterHoursNightclubs.LoadDefault() -- -1604.664, -3012.583, -78.000
+    AfterHoursNightclubs.LoadDefault() -- -1604.664, -3012.583, -78.000
 
     -- ====================================================================
     -- =------------------- [DLC: Diamond Casino Resort] -----------------=
@@ -149,9 +149,9 @@ CreateThread(function()
     -- =------------------- [DLC: Los Santos Tuners] ---------------------=
     -- ====================================================================
     if GetGameBuildNumber() >= 2372 then
-        -- TunerGarage.LoadDefault()  -- -1350.0, 160.0, -100.0
-        -- TunerMethLab.LoadDefault() -- 981.9999, -143.0, -50.0
-        -- TunerMeetup.LoadDefault()  -- -2000.0, 1113.211, -25.36243
+        TunerGarage.LoadDefault()  -- -1350.0, 160.0, -100.0
+        TunerMethLab.LoadDefault() -- 981.9999, -143.0, -50.0
+        TunerMeetup.LoadDefault()  -- -2000.0, 1113.211, -25.36243
     end
 
     -- ====================================================================
@@ -182,8 +182,8 @@ CreateThread(function()
     -- ====================================================================
     if GetGameBuildNumber() >= 2802 then
         DrugWarsFreakshop.LoadDefault() -- 570.9713, -420.0727, -70.000
-        DrugWarsGarage.LoadDefault() -- 519.2477, -2618.788, -50.000
-        DrugWarsLab.LoadDefault() -- 483.4252, -2625.071, -50.000
+        DrugWarsGarage.LoadDefault()    -- 519.2477, -2618.788, -50.000
+        DrugWarsLab.LoadDefault()       -- 483.4252, -2625.071, -50.000
     end
 
     -- ====================================================================
@@ -191,7 +191,7 @@ CreateThread(function()
     -- ====================================================================
     if GetGameBuildNumber() >= 2944 then
         MercenariesClub.LoadDefault() -- 1202.407, -3251.251, -50.000
-        MercenariesLab.LoadDefault() -- -1916.119, 3749.719, -100.000
+        MercenariesLab.LoadDefault()  -- -1916.119, 3749.719, -100.000
         MercenariesFixes.LoadDefault()
     end
 
@@ -199,10 +199,10 @@ CreateThread(function()
     -- =------------------- [DLC: The Chop Shop] -------------------------=
     -- ====================================================================
     if GetGameBuildNumber() >= 3095 then
-        ChopShopCargoShip.LoadDefault() -- -344.4349, -4062.832, 17.000
+        ChopShopCargoShip.LoadDefault()    -- -344.4349, -4062.832, 17.000
         ChopShopCartelGarage.LoadDefault() -- 1220.133, -2277.844, -50.000
-        ChopShopLifeguard.LoadDefault() -- -1488.153, -1021.166, 5.000
-        ChopShopSalvage.LoadDefault() -- 1077.276, -2274.876, -50.000
+        ChopShopLifeguard.LoadDefault()    -- -1488.153, -1021.166, 5.000
+        ChopShopSalvage.LoadDefault()      -- 1077.276, -2274.876, -50.000
     end
     KiiyaMotorMotel.LoadDefault()
 end)

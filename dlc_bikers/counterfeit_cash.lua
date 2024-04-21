@@ -180,8 +180,8 @@ BikerCounterfeit = {
             C = "counterfeit_cashpile100c",
             D = "counterfeit_cashpile100d",
         },
-        chairs = "special_chairs", -- Brown chairs at the end of the room
-        cutter = "money_cutter", -- Money cutting machine
+        chairs = "special_chairs",        -- Brown chairs at the end of the room
+        cutter = "money_cutter",          -- Money cutting machine
         furnitures = "counterfeit_setup", -- Paper, counting machines, cups
 
         Enable = function(details, state, refresh)
@@ -190,17 +190,17 @@ BikerCounterfeit = {
     },
 
     LoadDefault = function()
-        BikerCounterfeit.Ipl.Interior.Load()
-        BikerCounterfeit.Printer.Set(BikerCounterfeit.Printer.basicProd)
-        BikerCounterfeit.Security.Set(BikerCounterfeit.Security.upgrade)
-        BikerCounterfeit.Dryer1.Set(BikerCounterfeit.Dryer1.open)
-        BikerCounterfeit.Dryer2.Set(BikerCounterfeit.Dryer2.on)
-        BikerCounterfeit.Dryer3.Set(BikerCounterfeit.Dryer3.on)
-        BikerCounterfeit.Dryer4.Set(BikerCounterfeit.Dryer4.on)
-        BikerCounterfeit.Details.Enable(BikerCounterfeit.Details.cutter, true)
-        BikerCounterfeit.Details.Enable(BikerCounterfeit.Details.furnitures, true)
-        BikerCounterfeit.Details.Enable(BikerCounterfeit.Details.Cash100, true)
+        -- BikerCounterfeit.Ipl.Interior.Load()
+        -- BikerCounterfeit.Printer.Set(BikerCounterfeit.Printer.basicProd)
+        -- BikerCounterfeit.Security.Set(BikerCounterfeit.Security.upgrade)
+        -- BikerCounterfeit.Dryer1.Set(BikerCounterfeit.Dryer1.open)
+        -- BikerCounterfeit.Dryer2.Set(BikerCounterfeit.Dryer2.on)
+        -- BikerCounterfeit.Dryer3.Set(BikerCounterfeit.Dryer3.on)
+        -- BikerCounterfeit.Dryer4.Set(BikerCounterfeit.Dryer4.on)
+        -- BikerCounterfeit.Details.Enable(BikerCounterfeit.Details.cutter, true)
+        -- BikerCounterfeit.Details.Enable(BikerCounterfeit.Details.furnitures, true)
+        -- BikerCounterfeit.Details.Enable(BikerCounterfeit.Details.Cash100, true)
 
-        RefreshInterior(BikerCounterfeit.interiorId)
+        -- RefreshInterior(BikerCounterfeit.interiorId)
     end
 }

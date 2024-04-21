@@ -84,8 +84,8 @@ BikerDocumentForgery = {
             G = "chair07"
         },
         production = "production", -- Papers, pencils
-        furnitures = "set_up", -- Printers, shredders
-        clutter = "clutter", -- Pizza boxes, cups
+        furnitures = "set_up",     -- Printers, shredders
+        clutter = "clutter",       -- Pizza boxes, cups
 
         Enable = function(details, state, refresh)
             SetIplPropState(BikerDocumentForgery.interiorId, details, state, refresh)
@@ -93,15 +93,15 @@ BikerDocumentForgery = {
     },
 
     LoadDefault = function()
-        BikerDocumentForgery.Ipl.Interior.Load()
-        BikerDocumentForgery.Style.Set(BikerDocumentForgery.Style.basic)
-        BikerDocumentForgery.Security.Set(BikerDocumentForgery.Security.basic)
-        BikerDocumentForgery.Equipment.Set(BikerDocumentForgery.Equipment.basic)
-        BikerDocumentForgery.Details.Enable(BikerDocumentForgery.Details.production, false)
-        BikerDocumentForgery.Details.Enable(BikerDocumentForgery.Details.setup, false)
-        BikerDocumentForgery.Details.Enable(BikerDocumentForgery.Details.clutter, false)
-        BikerDocumentForgery.Details.Enable(BikerDocumentForgery.Details.Chairs, true)
+        -- BikerDocumentForgery.Ipl.Interior.Load()
+        -- BikerDocumentForgery.Style.Set(BikerDocumentForgery.Style.basic)
+        -- BikerDocumentForgery.Security.Set(BikerDocumentForgery.Security.basic)
+        -- BikerDocumentForgery.Equipment.Set(BikerDocumentForgery.Equipment.basic)
+        -- BikerDocumentForgery.Details.Enable(BikerDocumentForgery.Details.production, false)
+        -- BikerDocumentForgery.Details.Enable(BikerDocumentForgery.Details.setup, false)
+        -- BikerDocumentForgery.Details.Enable(BikerDocumentForgery.Details.clutter, false)
+        -- BikerDocumentForgery.Details.Enable(BikerDocumentForgery.Details.Chairs, true)
 
-        RefreshInterior(BikerDocumentForgery.interiorId)
+        -- RefreshInterior(BikerDocumentForgery.interiorId)
     end
 }
