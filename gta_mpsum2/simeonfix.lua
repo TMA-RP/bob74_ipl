@@ -47,9 +47,9 @@ CriminalEnterpriseSmeonFix = {
     },
 
     LoadDefault = function()
-        CriminalEnterpriseSmeonFix.Ipl.Load()
-        CriminalEnterpriseSmeonFix.Entities.Load()
+        -- CriminalEnterpriseSmeonFix.Ipl.Load()
+        -- CriminalEnterpriseSmeonFix.Entities.Load()
 
-        RefreshInterior(CriminalEnterpriseSmeonFix.interiorId)
+        -- RefreshInterior(CriminalEnterpriseSmeonFix.interiorId)
     end
 }
