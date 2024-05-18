@@ -205,5 +205,4 @@ CreateThread(function()
         ChopShopSalvage.LoadDefault()      -- 1077.276, -2274.876, -50.000
     end
     KiiyaMotorMotel.LoadDefault()
-    RoyalMediumHouse.LoadDefault()
 end)
