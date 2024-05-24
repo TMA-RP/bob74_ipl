@@ -12,8 +12,8 @@ version '2.2.2'
 lua54 "yes"
 
 client_scripts {
-	"lib/common.lua"
-	, "lib/observers/interiorIdObserver.lua"
+    "lib/common.lua"
+    , "lib/observers/interiorIdObserver.lua"
 , "lib/observers/officeSafeDoorHandler.lua"
 , "client.lua"
 
@@ -148,5 +148,4 @@ client_scripts {
 , "dlc_chopshop/lifeguard.lua"
 , "dlc_chopshop/salvage.lua"
 , "kiiya/*.lua"
-, "royalmapping/*.lua"
 }
