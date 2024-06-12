@@ -304,20 +304,20 @@ AfterHoursNightclubs = {
             end,
         },
         Details = {
-            clutter = "Int01_ba_Clutter", -- Clutter and graffitis
-            worklamps = "Int01_ba_Worklamps", -- Work lamps + trash
-            truck = "Int01_ba_deliverytruck", -- Truck parked in the garage
-            dryIce = "Int01_ba_dry_ice", -- Dry ice machines (no effects)
-            lightRigsOff = "light_rigs_off", -- All light rigs at once but turned off
-            roofLightsOff = "Int01_ba_lightgrid_01", -- Fake lights
+            clutter = "Int01_ba_Clutter",             -- Clutter and graffitis
+            worklamps = "Int01_ba_Worklamps",         -- Work lamps + trash
+            truck = "Int01_ba_deliverytruck",         -- Truck parked in the garage
+            dryIce = "Int01_ba_dry_ice",              -- Dry ice machines (no effects)
+            lightRigsOff = "light_rigs_off",          -- All light rigs at once but turned off
+            roofLightsOff = "Int01_ba_lightgrid_01",  -- Fake lights
             floorTradLights = "Int01_ba_trad_lights", -- Floor lights meant to go with the trad style
-            chest = "Int01_ba_trophy04", -- Chest on the VIP desk
-            vaultAmmunations = "Int01_ba_trophy05", -- (inside vault) Ammunations
-            vaultMeth = "Int01_ba_trophy07", -- (inside vault) Meth bag
-            vaultFakeID = "Int01_ba_trophy08", -- (inside vault) Fake ID
-            vaultWeed = "Int01_ba_trophy09", -- (inside vault) Opened weed bag
-            vaultCoke = "Int01_ba_trophy10", -- (inside vault) Coke doll
-            vaultCash = "Int01_ba_trophy11", -- (inside vault) Scrunched fake money
+            chest = "Int01_ba_trophy04",              -- Chest on the VIP desk
+            vaultAmmunations = "Int01_ba_trophy05",   -- (inside vault) Ammunations
+            vaultMeth = "Int01_ba_trophy07",          -- (inside vault) Meth bag
+            vaultFakeID = "Int01_ba_trophy08",        -- (inside vault) Fake ID
+            vaultWeed = "Int01_ba_trophy09",          -- (inside vault) Opened weed bag
+            vaultCoke = "Int01_ba_trophy10",          -- (inside vault) Coke doll
+            vaultCash = "Int01_ba_trophy11",          -- (inside vault) Scrunched fake money
 
             Enable = function(details, state, refresh)
                 SetIplPropState(AfterHoursNightclubs.interiorId, details, state, refresh)
@@ -640,7 +640,7 @@ AfterHoursNightclubs = {
         -- Interior setup
         AfterHoursNightclubs.Ipl.Interior.Load()
 
-        AfterHoursNightclubs.Interior.Name.Set(AfterHoursNightclubs.Interior.Name.galaxy)
+        AfterHoursNightclubs.Interior.Name.Set(AfterHoursNightclubs.Interior.Name.palace)
         AfterHoursNightclubs.Interior.Style.Set(AfterHoursNightclubs.Interior.Style.edgy)
 
         AfterHoursNightclubs.Interior.Podium.Set(AfterHoursNightclubs.Interior.Podium.edgy)
@@ -648,56 +648,65 @@ AfterHoursNightclubs = {
 
         AfterHoursNightclubs.Interior.Security.Set(AfterHoursNightclubs.Interior.Security.on)
 
-        AfterHoursNightclubs.Interior.Turntables.Set(AfterHoursNightclubs.Interior.Turntables.style01)
-        AfterHoursNightclubs.Interior.Lights.Bands.Set(AfterHoursNightclubs.Interior.Lights.Bands.cyan)
+        AfterHoursNightclubs.Interior.Turntables.Set(AfterHoursNightclubs.Interior.Turntables.style03)
+        AfterHoursNightclubs.Interior.Lights.Bands.Clear()
+        AfterHoursNightclubs.Interior.Lights.Neons.Clear()
+        AfterHoursNightclubs.Interior.Lights.Droplets.Clear()
+        AfterHoursNightclubs.Interior.Lights.Lasers.Clear()
+        AfterHoursNightclubs.Interior.Lights.Neons.Set(AfterHoursNightclubs.Interior.Lights.Neons.purple)
+        AfterHoursNightclubs.Interior.Lights.Lasers.Set(AfterHoursNightclubs.Interior.Lights.Lasers.purple)
 
         AfterHoursNightclubs.Interior.Bar.Enable(true)
 
-        AfterHoursNightclubs.Interior.Booze.Enable(AfterHoursNightclubs.Interior.Booze, true)
+        AfterHoursNightclubs.Interior.Booze.Enable(AfterHoursNightclubs.Interior.Booze.A, true)
+        AfterHoursNightclubs.Interior.Booze.Enable(AfterHoursNightclubs.Interior.Booze.B, true)
+        AfterHoursNightclubs.Interior.Booze.Enable(AfterHoursNightclubs.Interior.Booze.c, true)
 
-        AfterHoursNightclubs.Interior.Trophy.Enable(AfterHoursNightclubs.Interior.Trophy.number1, true, AfterHoursNightclubs.Interior.Trophy.Color.gold)
+        AfterHoursNightclubs.Interior.Trophy.Enable(AfterHoursNightclubs.Interior.Trophy.number1, false, AfterHoursNightclubs.Interior.Trophy.Color.gold)
+        AfterHoursNightclubs.Interior.Trophy.Enable(AfterHoursNightclubs.Interior.Trophy.battler, false, AfterHoursNightclubs.Interior.Trophy.Color.gold)
+        AfterHoursNightclubs.Interior.Trophy.Enable(AfterHoursNightclubs.Interior.Trophy.dancer, false, AfterHoursNightclubs.Interior.Trophy.Color.gold)
 
         RefreshInterior(AfterHoursNightclubs.interiorId)
 
         -- Exterior IPL
-        AfterHoursNightclubs.Mesa.Barrier.Enable(true)
-        AfterHoursNightclubs.Mesa.Posters.Enable(AfterHoursNightclubs.Posters, true)
+        AfterHoursNightclubs.Mesa.Barrier.Enable(false)
+        AfterHoursNightclubs.Mesa.Posters.Enable(AfterHoursNightclubs.Posters, false)
         AfterHoursNightclubs.Mesa.Posters.Enable(AfterHoursNightclubs.Posters.forSale, false)
 
-        AfterHoursNightclubs.MissionRow.Barrier.Enable(true)
-        AfterHoursNightclubs.MissionRow.Posters.Enable(AfterHoursNightclubs.Posters, true)
+        AfterHoursNightclubs.MissionRow.Barrier.Enable(false)
+        AfterHoursNightclubs.MissionRow.Posters.Enable(AfterHoursNightclubs.Posters, false)
         AfterHoursNightclubs.MissionRow.Posters.Enable(AfterHoursNightclubs.Posters.forSale, false)
 
-        AfterHoursNightclubs.Strawberry.Barrier.Enable(true)
-        AfterHoursNightclubs.Strawberry.Posters.Enable(AfterHoursNightclubs.Posters, true)
+        AfterHoursNightclubs.Strawberry.Barrier.Enable(false)
+        AfterHoursNightclubs.Strawberry.Posters.Enable(AfterHoursNightclubs.Posters, false)
         AfterHoursNightclubs.Strawberry.Posters.Enable(AfterHoursNightclubs.Posters.forSale, false)
 
-        AfterHoursNightclubs.VinewoodWest.Barrier.Enable(true)
-        AfterHoursNightclubs.VinewoodWest.Posters.Enable(AfterHoursNightclubs.Posters, true)
+        AfterHoursNightclubs.VinewoodWest.Barrier.Enable(false)
+        AfterHoursNightclubs.VinewoodWest.Posters.Enable(AfterHoursNightclubs.Posters, false)
         AfterHoursNightclubs.VinewoodWest.Posters.Enable(AfterHoursNightclubs.Posters.forSale, false)
 
-        AfterHoursNightclubs.Cypress.Barrier.Enable(true)
-        AfterHoursNightclubs.Cypress.Posters.Enable(AfterHoursNightclubs.Posters, true)
+        AfterHoursNightclubs.Cypress.Barrier.Enable(false)
+        AfterHoursNightclubs.Cypress.Posters.Enable(AfterHoursNightclubs.Posters, false)
         AfterHoursNightclubs.Cypress.Posters.Enable(AfterHoursNightclubs.Posters.forSale, false)
 
         AfterHoursNightclubs.DelPerro.Barrier.Enable(true)
         AfterHoursNightclubs.DelPerro.Posters.Enable(AfterHoursNightclubs.Posters, true)
         AfterHoursNightclubs.DelPerro.Posters.Enable(AfterHoursNightclubs.Posters.forSale, false)
 
-        AfterHoursNightclubs.Airport.Barrier.Enable(true)
-        AfterHoursNightclubs.Airport.Posters.Enable(AfterHoursNightclubs.Posters, true)
+        AfterHoursNightclubs.Airport.Barrier.Enable(false)
+        AfterHoursNightclubs.Airport.Posters.Enable(AfterHoursNightclubs.Posters, false)
         AfterHoursNightclubs.Airport.Posters.Enable(AfterHoursNightclubs.Posters.forSale, false)
 
-        AfterHoursNightclubs.Elysian.Barrier.Enable(true)
-        AfterHoursNightclubs.Elysian.Posters.Enable(AfterHoursNightclubs.Posters, true)
+        AfterHoursNightclubs.Elysian.Barrier.Enable(false)
+        AfterHoursNightclubs.Elysian.Posters.Enable(AfterHoursNightclubs.Posters, false)
         AfterHoursNightclubs.Elysian.Posters.Enable(AfterHoursNightclubs.Posters.forSale, false)
 
-        AfterHoursNightclubs.Vinewood.Barrier.Enable(true)
-        AfterHoursNightclubs.Vinewood.Posters.Enable(AfterHoursNightclubs.Posters, true)
+        AfterHoursNightclubs.Vinewood.Barrier.Enable(false)
+        AfterHoursNightclubs.Vinewood.Posters.Enable(AfterHoursNightclubs.Posters, false)
         AfterHoursNightclubs.Vinewood.Posters.Enable(AfterHoursNightclubs.Posters.forSale, false)
 
-        AfterHoursNightclubs.Vespucci.Barrier.Enable(true)
-        AfterHoursNightclubs.Vespucci.Posters.Enable(AfterHoursNightclubs.Posters, true)
+        AfterHoursNightclubs.Vespucci.Barrier.Enable(false)
+        AfterHoursNightclubs.Vespucci.Posters.Enable(AfterHoursNightclubs.Posters, false)
         AfterHoursNightclubs.Vespucci.Posters.Enable(AfterHoursNightclubs.Posters.forSale, false)
     end
 }

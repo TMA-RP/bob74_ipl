@@ -39,7 +39,7 @@ Global = {
     -- Set all interiors variables to false
     -- The loop inside 'interiorIdObserver' will set them to true
     ResetInteriorVariables = function()
-        for _, parentKey in pairs{"Biker", "FinanceOffices", "HighLife"} do
+        for _, parentKey in pairs { "Biker", "FinanceOffices", "HighLife" } do
             local t = Global[parentKey]
 
             for key in pairs(t) do
