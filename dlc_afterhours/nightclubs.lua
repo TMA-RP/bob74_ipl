@@ -666,6 +666,15 @@ AfterHoursNightclubs = {
         AfterHoursNightclubs.Interior.Trophy.Enable(AfterHoursNightclubs.Interior.Trophy.battler, false, AfterHoursNightclubs.Interior.Trophy.Color.gold)
         AfterHoursNightclubs.Interior.Trophy.Enable(AfterHoursNightclubs.Interior.Trophy.dancer, false, AfterHoursNightclubs.Interior.Trophy.Color.gold)
 
+
+        AfterHoursNightclubs.Interior.Details.Enable(AfterHoursNightclubs.Interior.Details.chest, false)
+        AfterHoursNightclubs.Interior.Details.Enable(AfterHoursNightclubs.Interior.Details.clutter, false)
+        AfterHoursNightclubs.Interior.Details.Enable(AfterHoursNightclubs.Interior.Details.dryIce, true)
+        AfterHoursNightclubs.Interior.Details.Enable(AfterHoursNightclubs.Interior.Details.floorTradLights, false)
+        AfterHoursNightclubs.Interior.Details.Enable(AfterHoursNightclubs.Interior.Details.lightRigsOff, false)
+        AfterHoursNightclubs.Interior.Details.Enable(AfterHoursNightclubs.Interior.Details.roofLightsOff, false)
+        AfterHoursNightclubs.Interior.Details.Enable(AfterHoursNightclubs.Interior.Details.truck, false)
+        AfterHoursNightclubs.Interior.Details.Enable(AfterHoursNightclubs.Interior.Details.worklamps, false)
         RefreshInterior(AfterHoursNightclubs.interiorId)
 
         -- Exterior IPL
