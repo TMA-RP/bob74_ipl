@@ -1,13 +1,9 @@
--- Resources:
--- **********
--- IPL list: https://wiki.rage.mp/index.php?title=Interiors_and_Locations
-
 fx_version 'cerulean'
 game 'gta5'
 
 author 'Bob_74'
 description 'Load and customize your map'
-version '2.2.2'
+version '2.3.2'
 
 lua54 "yes"
 
@@ -15,6 +11,7 @@ client_scripts {
     "lib/common.lua"
     , "lib/observers/interiorIdObserver.lua"
 , "lib/observers/officeSafeDoorHandler.lua"
+, "lib/observers/officeCullHandler.lua"
 , "client.lua"
 
 -- GTA V
@@ -109,6 +106,11 @@ client_scripts {
 , "dlc_casino/casino.lua"
 , "dlc_casino/penthouse.lua"
 
+-- DLC Cayo Perico Heist (Requires forced build 2189 or higher)
+, "dlc_cayoperico/base.lua"
+, "dlc_cayoperico/nightclub.lua"
+, "dlc_cayoperico/submarine.lua"
+
 -- DLC Tuners (Requires forced build 2372 or higher)
 , "dlc_tuner/garage.lua"
 , "dlc_tuner/meetup.lua"
@@ -147,5 +149,10 @@ client_scripts {
 , "dlc_chopshop/cartel_garage.lua"
 , "dlc_chopshop/lifeguard.lua"
 , "dlc_chopshop/salvage.lua"
+
+-- DLC Bottom Dollar Bounties (Requires forced build 3258 or higher)
+, "dlc_summer/base.lua"
+, "dlc_summer/carrier.lua"
+, "dlc_summer/office.lua"
 , "kiiya/*.lua"
 }

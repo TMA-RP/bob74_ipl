@@ -146,6 +146,14 @@ CreateThread(function()
     end
 
     -- ====================================================================
+    -- =-------------------- [DLC: Cayo Perico Heist] --------------------=
+    -- ====================================================================
+    if GetGameBuildNumber() >= 2189 then
+        CayoPericoNightclub.LoadDefault() -- 1550.0, 250.0, -50.0
+        CayoPericoSubmarine.LoadDefault() -- 1560.0, 400.0, -50.0
+    end
+
+    -- ====================================================================
     -- =------------------- [DLC: Los Santos Tuners] ---------------------=
     -- ====================================================================
     if GetGameBuildNumber() >= 2372 then
@@ -203,6 +211,14 @@ CreateThread(function()
         ChopShopCartelGarage.LoadDefault() -- 1220.133, -2277.844, -50.000
         ChopShopLifeguard.LoadDefault()    -- -1488.153, -1021.166, 5.000
         ChopShopSalvage.LoadDefault()      -- 1077.276, -2274.876, -50.000
+    end
+
+    -- ====================================================================
+    -- =------------------ [DLC: Bottom Dollar Bounties] -----------------=
+    -- ====================================================================
+    if GetGameBuildNumber() >= 3258 then
+        SummerCarrier.LoadDefault() -- -3208.03, 3954.54, 14.0
+        SummerOffice.LoadDefault()  -- 565.886, -2688.761, -50.0
     end
     KiiyaMotorMotel.LoadDefault()
 end)
